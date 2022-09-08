@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 const Context = React.createContext();
 
-const postsPerRow = 9;
+const postsPerPage = 9;
 
 function ContextProvider({ children }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchLocation, setSearchLocation] = useState("");
   const [searchContract, setSearchContract] = useState(false);
-  const [loadMore, setLoadMore] = useState(postsPerRow);
+  const [loadMore, setLoadMore] = useState(postsPerPage);
 
   function handleUserInput(e) {
     setSearchQuery(e.target.value);
@@ -23,7 +23,7 @@ function ContextProvider({ children }) {
   }
 
   function handleLoadMore() {
-    setLoadMore((prev) => prev + postsPerRow);
+    setLoadMore((prev) => prev + postsPerPage);
   }
 
   return (

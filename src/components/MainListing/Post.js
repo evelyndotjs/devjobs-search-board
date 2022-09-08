@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   background: #fff;
@@ -41,6 +42,10 @@ const StyledImage = styled.img`
   height: auto;
 `;
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
 export default function Post(props) {
   return (
     <Container>
@@ -49,7 +54,9 @@ export default function Post(props) {
       </ImageContainer>
       <StyledSubheading>{props.timestamp}</StyledSubheading>
       <StyledSubheading>{props.workContract}</StyledSubheading>
-      <StyledTitle>{props.position}</StyledTitle>
+      <StyledLink to={`/posts/${props.id}`}>
+        <StyledTitle>{props.position}</StyledTitle>
+      </StyledLink>
       <StyledSubheading>{props.company}</StyledSubheading>
       <StyledSubtitle>{props.workLocation}</StyledSubtitle>
     </Container>

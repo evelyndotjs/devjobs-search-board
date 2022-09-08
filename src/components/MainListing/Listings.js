@@ -62,9 +62,10 @@ export default function Listings() {
               }
             }
           })
-          .map((post, index) => (
-            <div className="box" key={index}>
+          .map((post) => (
+            <div className="box" key={post.id}>
               <Post
+                id={post.id}
                 position={post.position}
                 timestamp={post.timestamp}
                 company={post.company}

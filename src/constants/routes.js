@@ -1,2 +1,2 @@
 export const DASHBOARD = "/";
-export const POSTS = "/posts";
+export const POSTS = "/posts/:id";
