@@ -24,6 +24,8 @@ export default function Listings() {
   } = useContext(Context);
 
   const styledbtn = {
+    backgroundColor: "#5964e0",
+    color: "#fff",
     position: "relative",
     left: "50%",
     margin: "56px 0 50px",
