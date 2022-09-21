@@ -4,10 +4,10 @@ import styled from "styled-components";
 
 const Container = styled.div`
   position: absolute;
-  width: 1600px;
+  width: 100%;
   height: 96px;
   left: 0px;
-  top: 1500px;
+  top: 210%;
   background: #fff;
 `;
 
@@ -20,10 +20,21 @@ const FlexContainer = styled.div`
   margin: 0 auto;
 `;
 
+const TextContainer = styled.div`
+  padding: 23px 0 22px;
+`;
+
 const Title = styled.h1`
   color: #19202d;
   font-weight: 700;
   font-size: 1.25rem;
+  margin-bottom: -8px;
+`;
+
+const Subtitle = styled.h2`
+  color: #6e8098;
+  font-weight: 400;
+  font-size: 1rem;
 `;
 
 export default function Footer(props) {
@@ -41,10 +52,10 @@ export default function Footer(props) {
   return (
     <Container>
       <FlexContainer>
-        <div>
+        <TextContainer>
           <Title>{props.position}</Title>
-          <h2>{props.company}</h2>
-        </div>
+          <Subtitle>{props.company}</Subtitle>
+        </TextContainer>
         <StyledButton
           onClick={handleClick}
           text="Apply Now"

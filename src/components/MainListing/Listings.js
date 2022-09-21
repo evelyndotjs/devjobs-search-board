@@ -26,8 +26,8 @@ export default function Listings() {
   const styledbtn = {
     backgroundColor: "#5964e0",
     color: "#fff",
-    position: "relative",
     left: "50%",
+    transform: "translate(-50%, -50%)",
     margin: "56px 0 50px",
   };
 

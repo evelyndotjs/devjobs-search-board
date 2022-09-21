@@ -11,7 +11,6 @@ const FlexContainer = styled.div`
   height: 140px;
   left: 355px;
   top: 120px;
-  margin: 0 auto;
 `;
 
 const ImageContainer = styled.div`
@@ -31,7 +30,7 @@ const StyledSubtitle = styled.h2`
   font-weight: 400;
   font-size: 1rem;
   margin-top: -20px;
-  text-/r/ultrawidemasterrace/comments/9v8wzd/35_inch_ultrawide_too_small/transform: lowercase;
+  transform: lowercase;
 `;
 
 export default function Header(props) {
@@ -50,7 +49,7 @@ export default function Header(props) {
   return (
     <FlexContainer>
       <ImageContainer style={{ backgroundColor: props.background }}>
-        <img src={props.logo} alt="company logo" />
+        <img src="/assets/logos/blogr.svg" alt="company logo" />
       </ImageContainer>
       <TitleContainer>
         <h1>{props.company}</h1>

@@ -9,7 +9,6 @@ const Container = styled.div`
   height: auto;
   left: 355px;
   top: 292px;
-  margin: 0 auto;
 `;
 
 const FlexContainer = styled.div`
