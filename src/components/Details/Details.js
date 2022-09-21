@@ -4,11 +4,10 @@ import StyledButton from "../StyledButton";
 
 const Container = styled.div`
   background-color: #fff;
-  position: absolute;
+  position: relative;
   width: 730px;
   height: auto;
-  left: 355px;
-  top: 292px;
+  margin: 0 auto;
 `;
 
 const FlexContainer = styled.div`
@@ -70,7 +69,7 @@ export default function Details(props) {
 
   return (
     <Container>
-      <P style={{ marginTop: "48px" }}>
+      <P style={{ marginTop: "10px", paddingTop: "40px" }}>
         {props.timestamp} <span style={{ margin: "10px" }}>&#x2022;</span>{" "}
         {props.contract}
       </P>

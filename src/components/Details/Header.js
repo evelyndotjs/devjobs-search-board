@@ -6,11 +6,11 @@ const FlexContainer = styled.div`
   display: flex;
   align-items: center;
   background-color: #fff;
-  position: absolute;
+  position: relative;
   width: 730px;
   height: 140px;
-  left: 355px;
-  top: 120px;
+  top: -40px;
+  margin: 0 auto;
 `;
 
 const ImageContainer = styled.div`
@@ -49,7 +49,7 @@ export default function Header(props) {
   return (
     <FlexContainer>
       <ImageContainer style={{ backgroundColor: props.background }}>
-        <img src="/assets/logos/blogr.svg" alt="company logo" />
+        <img src={props.logo} alt="company logo" />
       </ImageContainer>
       <TitleContainer>
         <h1>{props.company}</h1>

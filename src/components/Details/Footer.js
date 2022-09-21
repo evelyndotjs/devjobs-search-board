@@ -3,11 +3,10 @@ import StyledButton from "../StyledButton";
 import styled from "styled-components";
 
 const Container = styled.div`
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 96px;
-  left: 0px;
-  top: 210%;
+  margin-top: 50px;
   background: #fff;
 `;
 
